@@ -1,0 +1,28 @@
+<%- include("partials/header")%>
+    <%- include("partials/nav")%>
+        <div class="  d-flex">
+
+            <div class="card me-3 mb-3" style="width: 18rem">
+
+                <img src="<%=book.poster %>" style="height: 25vh; object-fit: cover;object-position: center;"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <%= book.name %>
+                    </h5>
+                    <h6>
+                        <%= book.author %>
+                    </h6>
+                    <p class=" mt-3 card-text">
+                        <%= book.description %>
+                    </p>
+
+
+
+                    <a href="/update-book/<%=book._id%>" class="btn btn-primary">Update Book</a>
+                    <a href="/delete-book/<%= book._id%>" class="btn btn-primary">Delete Book</a>
+
+
+                </div>
+            </div>
+            <%- include("partials/footer")%>

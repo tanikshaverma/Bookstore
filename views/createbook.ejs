@@ -1,0 +1,22 @@
+<%- include("partials/header")%>
+    <%- include("partials/nav")%>
+        <div class="d-flex">
+            <!-- <img class="w-25 h-25 mt-5 py-2 ms-5"
+                src="https://i.pinimg.com/564x/59/6d/09/596d0998d99013eefe2b58d9954092fb.jpg " alt=""> -->
+            <form class="mt-2.5 p-5 rounded container" action="/create-book" method="post">
+                <h1 class="mb-5 fs-1 fw-bolder">Register New Book</h1>
+                <input class="form-control mb-3 py-2 w-75" type="url" placeholder="Book poster" name="poster">
+                <input class="form-control mb-3 py-2 w-75" type="text" placeholder="Book Name" name="name">
+                <input class="form-control mb-3 py-2 w-75" type="text" placeholder="Author Name" name="author">
+                <input class="form-control mb-3 py-2 w-75" type="text" placeholder="Book price" name="price">
+                <input class="form-control mb-3 py-2 w-75" type="text" placeholder="Isbn number" name="isbn">
+                <textarea name="description" rows="5" class="w-25  form-control mb-3 py-2"
+                    placeholder="Enter description here....."></textarea>
+                <button class="btn btn-primary w-25">Add To Library </button>
+                <!-- <button class="btn btn-danger w-25">Delete To Library </button> -->
+            </form>
+        </div>
+
+
+
+        <%- include("partials/footer")%>
